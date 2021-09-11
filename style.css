@@ -297,3 +297,125 @@ span.fade {
   background: #e21212;
 }
 /*INFO SECTION ENDS*/
+
+
+/*index start*/
+@media (max-width: 900px) {
+  .banner {
+    width: 100%;
+  }
+
+  .banner h1 {
+    font-size: 90px;
+  }
+
+  .banner h2 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 650px) {
+  .banner {
+    width: 100%;
+  }
+
+  .banner h1 {
+    font-size: 70px;
+  }
+}
+
+@media (max-width: 650px) {
+  .banner {
+    width: 100%;
+  }
+
+  .banner h1 {
+    font-size: 40px;
+  }
+
+  .banner h2 {
+    letter-spacing: 0.3rem;
+  }
+
+  .banner .button-container {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .btn {
+    margin: 10px 20px;
+  }
+}
+
+/*index ends*/
+
+/*projects start*/
+
+@media (max-width: 1085px) {
+  .projects-container {
+    width: 90%;
+  }
+
+  .text-container h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 740px) {
+  .tittle h1 {
+    font-size: 2.5rem;
+    margin: 60px 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .tittle h1 {
+    font-size: 2rem;
+    margin-top: 100px;
+    margin-bottom: 0;
+  }
+
+  .project-box {
+    width: 100%;
+    flex-direction: column;
+    margin-bottom: 30px;
+    justify-content: center;
+    align-items: center;
+    background-color: #da928a;
+  }
+
+  .reverse {
+    flex-direction: column;
+  }
+
+  .reverse .text-container {
+    text-align: center;
+    margin-right: 0px;
+  }
+  .project-box-pic {
+    width: 90%;
+    margin-top: 30px;
+  }
+
+  .text-container {
+    text-align: center;
+    width: 90%;
+    padding-left: 0px;
+  }
+}
+
+/*projects start*/
+@media (max-width: 950px) {
+  .info {
+    width: 100%;
+    height: auto;
+  }
+
+  .card {
+    width: 80%;
+    height: auto;
+  }
+}
+
