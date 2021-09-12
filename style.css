@@ -413,7 +413,8 @@ span.fade {
   }
 
   .card {
-    width: 90%;
+    margin-top: 30px;
+    width: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
