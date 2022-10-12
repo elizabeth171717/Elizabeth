@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: SF Pro Text;
+        font-size: 13px;
+      }
+      .light-color {
+        color: #65676b;
+        font-size: 12px;
+      }
+
+      table,
+      th,
+      td {
+        padding: 10px;
+        border-collapse: collapse;
+      }
+
+      .price {
+        font-family: SF Pro Display;
+        font-size: 28px;
+        line-height: 32px;
+        color: #050505;
+        padding-top: 2px;
+        font-weight: 600;
+      }
+
+      .btn {
+        background: #1b74e4;
+        border-radius: 6px;
+        font-weight: 500;
+        font-family: SF Pro Text;
+        font-size: 15px;
+        width: 160px;
+        height: 36px;
+        text-align: center;
+        white-space: nowrap;
+        border: none;
+      }
+
+      .btn-2 {
+        background: rgb(243, 241, 241);
+      }
+      .receipt-container {
+        margin: 0 auto;
+        width: 850px;
+        max-width: 100%;
+        background-color: #f5f3f3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      .container {
+        width: 500px;
+      }
+
+      header {
+        padding: 40px;
+        display: flex;
+        justify-content: center;
+      }
+
+      .table-description {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        padding: 20px 0;
+      }
+
+      .left {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .right {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .table-container {
+        padding: 10px;
+        width: 100%;
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .btn-container {
+        margin: 20px 0;
+        padding: 20px;
+        background-color: #ffffff;
+        display: flex;
+        justify-content: space-around;
+      }
+
+      .last-container {
+        margin: 20px 0;
+        padding: 20px;
+        background-color: #ffffff;
+        text-align: center;
+      }
+
+      footer {
+        width: 95%;
+
+        padding: 20px 10px;
+        color: #65676b;
+        border-top: 1px solid #c2c3c4;
+        margin: 20px 0;
+      }
+      @media (max-width: 600px) {
+        .receipt-container {
+          width: 100%;
+        }
+
+        header {
+          padding: 20px;
+        }
+        .container {
+          width: 90%;
+        }
+
+        .btn-container {
+          width: 100%;
+          background-color: #ffffff;
+          display: flex;
+          justify-content: space-around;
+        }
+        .btn {
+          width: 40%;
+        }
+      }
+    </style>
+    <title>RECEIPT</title>
+  </head>
+  <body>
+    <div class="receipt-container">
+      <div class="container">
+        <header>
+          <img src="../images/meta.png" alt="" width="80px" height="16px" />
+        </header>
+        <div class="table-container">
+          <div class="table-description">
+            <div class="left">
+              <p class="light-color" style="font-size: 11px">Receipt for:</p>
+              <p class="light-color">Transaction ID:</p>
+            </div>
+            <div
+              class="right"
+              style="
+                border-bottom: 1px solid rgb(243, 241, 241);
+                padding: 10px 0;
+              "
+            >
+              <p style="font-size: 11px">Elizabeth TR (453188371434205)</p>
+              <p style="font-size: 11px; color: #1763cf">
+                5455680431214628-10548330
+              </p>
+            </div>
+            <div class="full">
+              <p style="font-size: 18px; color: #050505; margin-top: 20px">
+                Payment summary
+              </p>
+            </div>
+          </div>
+          <!--FIRST TABLE STARTS-->
+          <table style="width: 100%">
+            <tr>
+              <td class="light-color">Amount billed</td>
+              <td class="light-color">Date range</td>
+            </tr>
+            <tr>
+              <td class="price">$30.59 USD</td>
+              <td style="font-size: 13px">
+                Aug 17, 2022, 12:00 AM - Aug 30, 2022, 11:59 PM
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td class="light-color" colspan="2">
+                <p>Product type</p>
+                <p style="font-size: 12px; color: #050505">Facebook ads</p>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <p class="light-color">Billing reason</p>
+                <p style="padding-right: 40px">
+                  Remaining ad costs at the end of the month.
+                </p>
+              </td>
+              <td>
+                <p class="light-color" style="margin-top: 15px">
+                  Payment method
+                </p>
+                <p>Visa · 2488</p>
+                <p>REFERENCE NUMBER</p>
+                <p style="font-weight: bold">LVT9WHBPR2</p>
+              </td>
+            </tr>
+          </table>
+          <!--FIRST TABLE ENDS-->
+          <div style="margin: 20px 0">
+            <img style="margin-right: 10px" src="../images/icon.png" />You’ll
+            get your next bill on your monthly billing date, if you spend
+            $75.00, or after your ads stop running — whichever comes first.
+          </div>
+          <!--SECOND TABLE STARTS-->
+
+          <table style="width: 100%">
+            <tr
+              style="
+                border-top: 1px solid rgb(243, 241, 241);
+                border-bottom: 1px solid rgb(243, 241, 241);
+              "
+            >
+              <th class="light-color" style="text-align: left">Campaign</th>
+              <th class="light-color" style="text-align: left">Results</th>
+              <th class="light-color" style="text-align: left">Amount</th>
+            </tr>
+            <tr>
+              <td>Post: "Necesitas ayuda para llenar alguna de estas...</td>
+              <td>669 Impressions</td>
+              <td>$7.60</td>
+            </tr>
+            <tr>
+              <td>
+                Post: "KC CONSTRUCTION can help you BUILD your HOME and..."
+              </td>
+              <td>2,015 Impressions</td>
+              <td>$22.99</td>
+            </tr>
+            <tr style="border-top: 1px solid rgb(243, 241, 241)">
+              <td>Campaign total</td>
+              <td></td>
+              <td style="font-weight: bold; font-size: 15px">$30.59</td>
+            </tr>
+            <tr>
+              <td>Total</td>
+              <td></td>
+              <td style="font-weight: bold; font-size: 15px">$30.59</td>
+            </tr>
+          </table>
+        </div>
+        <div class="btn-container">
+          <button class="btn" style="color: white">See full receipt</button>
+          <button class="btn btn-2">Manage your ads</button>
+        </div>
+        <div class="last-container">
+          <p>
+            You’re now being billed by Meta Platforms Inc., formerly Facebook,
+            Inc.
+          </p>
+        </div>
+      </div>
+      <footer>
+        <p>
+          This is an automated message. Please do not reply. If you have
+          questions about ads, you can
+          <span style="color: #1763cf">get help</span>. You can also manage your
+          <span style="color: #1763cf">email notification</span> settings for
+          this ad account. Meta Platforms, Inc., Attention: Community Support, 1
+          Facebook Way, Menlo Park, CA 94025
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

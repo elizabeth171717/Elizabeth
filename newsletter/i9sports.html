@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background: rgb(238, 232, 232);
+        line-height: 1.2;
+        font-size: 17px;
+        color: rgb(70, 69, 71);
+        font-family: Helvetica, Arial, sans-serif;
+      }
+
+      p {
+        text-align: center;
+        margin: 20px 20px;
+      }
+
+      h2 {
+        font-size: 22px;
+        color: rgb(19, 30, 66);
+        font-weight: bold;
+        text-align: center;
+        margin: 15px 5px;
+        font-family: Century Gothic, Calibri, Helvetica, Arial, sans-serif;
+      }
+
+      .btn {
+        background-color: rgb(126, 2, 2);
+        color: #ffffff;
+        border: none;
+        font-weight: bold;
+        padding: 9px 15px 10px;
+        margin: 10px 0;
+      }
+
+      .newletter-container {
+        padding: 50px 0;
+        display: block;
+        max-width: 100%;
+        margin: 0 auto;
+        width: 600px;
+        background-color: white;
+      }
+
+      .container {
+        width: 100%;
+      }
+
+      article {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .img-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+      .article-heading {
+        width: 100%;
+        font-family: Arial, Verdana, Helvetica, sans-serif;
+        font-size: 16px;
+        background-color: #131e42;
+        text-align: center;
+        display: block;
+        word-wrap: break-word;
+        line-height: 1.2;
+        padding: 15px 5px;
+        margin: 20px 0;
+      }
+
+      .article-heading h1 {
+        color: #ffffff;
+      }
+
+      header {
+        background-color: #131e42;
+      }
+
+      header .article-heading {
+        padding: 10px 5px;
+        font-size: 14px;
+      }
+
+      footer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 20px;
+      }
+
+      .social-media {
+        width: 50%;
+        display: flex;
+        justify-content: space-around;
+        margin: 30px 0;
+      }
+
+      @media (max-width: 600px) {
+        .newletter-container {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .container {
+          width: 90%;
+        }
+
+        .social-media {
+          width: 80%;
+          display: flex;
+          justify-content: space-between;
+        }
+
+        p {
+          font-size: 12px;
+        }
+
+        h2 {
+          font-size: 18px;
+        }
+      }
+    </style>
+    <title>NEWSLETTER</title>
+  </head>
+  <body>
+    <div class="newletter-container">
+      <div class="container">
+        <header>
+          <img style="width: 100%" src="../images/i9sports.gif" />
+          <div class="article-heading">
+            <h1>
+              July
+              <span style="background-color: #fde293; color: #222"
+                >Newsletter</span
+              >
+            </h1>
+          </div>
+        </header>
+        <article>
+          <p>Dear Elizabeth,</p>
+          <p>
+            It's July and the kids are well into summer break. Keep those little
+            balls of energy busy this month with our kid-friendly soccer drills
+            for National Soccer Day. Then, let us help feed your hungry athletes
+            by entering for a chance to win a
+            <span
+              style="
+                color: rgb(70, 69, 71);
+                font-size: 16px;
+                font-weight: bold;
+                font-family: Helvetica, Arial, sans-serif;
+              "
+              ><a style="color: #222" href="#">FREE</a> Ninja Air Fryer</span
+            >!
+          </p>
+          <p>
+            Don't forget about our summer clinics and leagues! Find a
+            <a style="color: #222" href="#">program near you</a> before it's
+            time to go back to school.
+          </p>
+        </article>
+        <article>
+          <div class="article-heading">
+            <h1>HAPPENING THIS MONTH</h1>
+          </div>
+          <h2>National Soccer Day</h2>
+          <div class="img-container">
+            <img style="width: 80%" src="../images/playing.gif" />
+          </div>
+          <p>
+            <span
+              style="
+                color: rgb(70, 69, 71);
+                font-size: 16px;
+                font-weight: bold;
+                font-family: Helvetica, Arial, sans-serif;
+              "
+              >July 28th is National Soccer Day</span
+            >
+            and we want you to come outside and practice with us! Try our
+            <a style="color: rgb(126, 2, 2)" href="#">drills</a> designed for
+            all ages.
+          </p>
+          <button class="btn">WATCH MORE DRILLS</button>
+        </article>
+        <article>
+          <div class="article-heading">
+            <h1>SPORTSMANSHIP VALUE OF THE MONTH</h1>
+          </div>
+          <div class="img-container">
+            <img
+              style="width: 50%; margin-top: 10px"
+              src="../images/team.png"
+            />
+          </div>
+          <h2>SEND US YOUR SPORTSMANSHIP PHOTOS</h2>
+          <p>
+            Did your child earn their first medal, help a teammate, or learn a
+            new skill? We'd love to see photos and hear your athlete's story!
+            Share your photos by emailing us at
+            <a href="#" style="color: grey"
+              >photos@<span style="background-color: #fde293"
+                >i9sports.com</span
+              > </a
+            >and they may even be featured in our future newsletters.
+          </p>
+          <button class="btn">SUBMIT YOUR PHOTOS</button>
+        </article>
+        <article>
+          <div class="article-heading">
+            <h1>IN THE STORE</h1>
+          </div>
+          <div class="img-container">
+            <img style="width: 70%" src="../images/baseball.png" />
+          </div>
+          <p>
+            Choosing the
+            <span style="text-decoration: underline; font-weight: bold">
+              perfect hat</span
+            >
+            for game day is tough, so we've got you covered. Now, you can wear
+            the same hat that your kids wear on the field!
+          </p>
+          <button class="btn">SHOP NOW</button>
+        </article>
+        <article>
+          <div class="article-heading">
+            <h1>OFF THE FIELD</h1>
+          </div>
+          <h2>Welcome to Our 200th Location</h2>
+          <div class="img-container">
+            <img style="width: 70%" src="../images/map.gif" />
+          </div>
+          <p>
+            We're excited to announce our
+            <span style="color: rgb(126, 2, 2); text-decoration: underline"
+              >200th location</span
+            >! We look forward to continued growth and the ability to teach
+            sportsmanship values and help kids succeed through
+            <span style="background-color: #fde293">sports</span> in more
+            communities. See you soon
+            <span style="color: rgb(126, 2, 2); text-decoration: underline"
+              >Northwest Denver</span
+            >!
+          </p>
+          <p style="font-weight: bold; font-size: 14px">
+            ﻿Interested in joining the
+            <span style="background-color: #fde293">i9</span>
+            <span style="background-color: #fde293">Sports</span> team?
+            <span style="text-decoration: underline"
+              >Click here to learn more</span
+            >. We have available territories in communities throughout the
+            country ﻿and would love to talk to you.
+          </p>
+          <button class="btn">READ MORE</button>
+        </article>
+        <article>
+          <div class="article-heading">
+            <h1>FREE STUFF</h1>
+          </div>
+          <h2>Be a Ninja in the Kitchen This Summer</h2>
+          <div class="img-container">
+            <div class="img-container">
+              <img src="../images/food.gif" />
+            </div>
+          </div>
+          <p>
+            We're here to help feed your kids and all their friends this summer!
+            Enter to win a
+            <span style="font-weight: bold"
+              >Ninja 6-in-1 Double Basket Air Fryer</span
+            >
+            and make their favorite snacks in half the time.
+          </p>
+          <p>
+            <span style="color: rgb(126, 2, 2); text-decoration: underline">
+              Enter</span
+            >
+            by <span style="font-weight: bold"> July 13th </span> your chance to
+            win.
+          </p>
+          <button class="btn">ENTER NOW</button>
+        </article>
+        <article>
+          <div class="article-heading">
+            <h1>
+              Exclusive Membership for
+              <span style="background-color: #fde293">i9</span>
+              <span style="background-color: #fde293">Sports</span> Families
+            </h1>
+          </div>
+          <div class="img-container">
+            <img style="width: 60%" src="../images/menbership.png" />
+          </div>
+          <p>
+            You now have exclusive access to the same training materials as all
+            of our coaches! Visit the
+            <span style="color: rgb(126, 2, 2); text-decoration: underline">
+              registration page</span
+            >
+            to sign up, fill out the membership form, and then click
+            <strong>"UPGRADE"</strong> to use the promo code above.
+          </p>
+
+          <button class="btn">SIGN UP</button>
+        </article>
+        <article>
+          <div class="img-container">
+            <img style="width: 100%" src="../images/lights.gif" />
+          </div>
+        </article>
+        <footer>
+          <img style="width: 40%" src="../images/logo.png" />
+          <div class="social-media">
+            <div class="link"><img src="../images/fb.png" /></div>
+            <div class="link"><img src="../images/ig.png" /></div>
+            <div class="link"><img src="../images/pinteret.png" /></div>
+            <div class="link"><img src="../images/twitter.png" /></div>
+            <div class="link"><img src="../images/twitter.png" /></div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

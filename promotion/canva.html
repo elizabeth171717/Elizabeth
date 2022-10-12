@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Promotion</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: #e8ecee;
+      }
+
+      a {
+        color: grey;
+      }
+      h1 {
+        color: #0e1318;
+        font-family: Open Sans, Helvetica, Arial, sans serif;
+        font-size: 32px;
+        font-weight: 700;
+        letter-spacing: -0.5px;
+        line-height: 130%;
+        text-align: left;
+      }
+
+      h2 {
+        margin: 15px 0;
+      }
+      p {
+        color: #0e1318;
+        font-family: Open Sans, Helvetica, Arial, sans serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 160%;
+      }
+      button {
+        background: #7d2ae8;
+        border-radius: 4px;
+        color: #ffffff;
+        display: inline-block;
+        font-family: Open Sans, Helvetica, Arial, sans serif;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 160%;
+        margin: 15px 0;
+        padding: 9px 16px;
+        text-decoration: none;
+        text-transform: none;
+        border: none;
+      }
+      .btn {
+        border-radius: 4px;
+        border: 1px solid #ced1d3;
+        background: #ffffff;
+        color: #565a5d;
+        display: inline-block;
+        font-family: Open Sans, Helvetica, Arial, sans serif;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 160%;
+        margin: 0;
+        padding: 9px 14px;
+        text-decoration: none;
+        text-transform: none;
+      }
+
+      .img-box {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+
+      .img-box {
+        width: 80%;
+      }
+
+      .promotion-email-container {
+        width: 600px;
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        padding: 40px 0;
+      }
+
+      .email-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      section {
+        background-color: rgb(253, 253, 253);
+        border-radius: 10px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 10px 0;
+        padding: 30px 0;
+      }
+      .container {
+        width: 90%;
+      }
+
+      header {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .header-container {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+      }
+
+      /*GALLERY STARTS*/
+      .gallery {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        margin: 20px 0;
+      }
+
+      .img-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+      }
+
+      .gallery img {
+        width: 240px;
+        height: 240px;
+        border-radius: 5px;
+      }
+
+      .description {
+        color: #0e1318;
+        font-family: Open Sans, Helvetica, Arial, sans serif;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 160%;
+        margin: 0;
+        padding: 20px 0;
+      }
+
+      /*GALLERY ENDS*/
+
+      .title {
+        width: 80%;
+        margin: 20px 0;
+      }
+
+      .list {
+        width: 100%;
+      }
+
+      .list .item {
+        width: 90%;
+        display: flex;
+        align-items: center;
+        margin: 15px 0;
+      }
+
+      .number {
+        color: #293039;
+        line-height: 32px;
+        border-radius: 50%;
+        background: #edf0f2;
+        font-size: 14px;
+        font-weight: 400;
+        width: 32px;
+        height: 32px;
+        text-align: center;
+        margin-right: 10px;
+      }
+
+      /*FOOTER*/
+
+      footer {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .footer-p {
+        width: 80%;
+        padding: 30px 0;
+        border-bottom: 1px solid rgb(182, 181, 181);
+      }
+
+      .social-media {
+        width: 30%;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      /*smaller screen*/
+
+      @media (max-width: 600px) {
+        h1 {
+          font-size: 25px;
+        }
+
+        h2 {
+          padding: 0 20px;
+        }
+        p {
+          padding: 0 20px;
+        }
+
+        button {
+          margin: 15px 20px;
+        }
+
+        .list {
+          width: 100%;
+          padding: 0 20px;
+        }
+
+        .promotion-email-container {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .email-container {
+          width: 90%;
+        }
+
+        .container {
+          width: 100%;
+        }
+
+        .header-container {
+          width: 90%;
+        }
+
+        .img-box {
+          width: 100%;
+        }
+
+        .img-box img {
+          width: 80%;
+        }
+
+        /*GALLERY STARTS*/
+        .gallery {
+          width: 100%;
+        }
+
+        .img-container {
+          width: 100%;
+
+          align-self: center;
+        }
+
+        .image {
+          width: 80%;
+        }
+
+        .image img {
+          object-fit: cover;
+          width: 100%;
+          height: 100%;
+        }
+
+        .description {
+          width: 80%;
+          text-align: center;
+          font-size: 11px;
+          padding: 5px 0;
+        }
+
+        .footer-p {
+          width: 100%;
+          padding: 30px 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="promotion-email-container">
+      <div class="email-container">
+        <section>
+          <header>
+            <div class="header-container">
+              <img src="../images/logoc.png" />
+              <button class="btn">Design with Canva</button>
+            </div>
+            <div class="title">
+              <h1>This week’s Design Challenge theme: Corn 🌽</h1>
+            </div>
+          </header>
+
+          <img
+            style="width: 100%; margin: 35px 0"
+            src="../images/corn2.png"
+            alt="corn"
+          />
+
+          <div class="container">
+            <p>
+              We can’t imagine a more beautiful theme. It has the juice and of
+              course, it’s best with butter. If you feel just as strongly about
+              corn as we do, then this week’s
+              <strong>#CanvaDesignChallenge</strong> is for you.
+            </p>
+            <p style="margin: 15px 0">
+              Design the ultimate corn meal, whip up a corny joke, or even write
+              your own corn song lyrics. Anything goes, and Canva prize packs
+              are up for grabs (these do not contain corn).
+            </p>
+            <button>Design with Corn</button>
+            <p><a href="#">*Challenge Terms & Conditions</a></p>
+          </div>
+        </section>
+
+        <section>
+          <div class="container">
+            <h2>How do I enter?</h2>
+            <div class="list">
+              <div class="item">
+                <div class="number">1</div>
+                <div class="text">
+                  Create a Corn-inspired design using Canva templates or
+                  elements
+                </div>
+              </div>
+              <div class="item">
+                <div class="number">2</div>
+                <div class="text">
+                  Share your design on Instagram or Twitter and tag<br />
+                  #CanvaDesignChallenge (we can only view public accounts)
+                </div>
+              </div>
+              <div class="item">
+                <div class="number">3</div>
+                <div class="text">
+                  We’ll showcase our favorite designs to the Canva community
+                </div>
+              </div>
+            </div>
+            <button>Design with Corn</button>
+          </div>
+          <div class="img-box">
+            <img
+              style="border-radius: 5px; margin-top: 20px"
+              src="../images/crop.png"
+              alt="corn"
+            />
+          </div>
+        </section>
+        <section>
+          <div class="container">
+            <h2>Canva community design inspiration</h2>
+            <p>
+              We loved seeing all of your Ocean-inspired designs in our last
+              Canva Design Challenge. Check out some of our favorites:
+            </p>
+          </div>
+          <div class="gallery">
+            <div class="img-container">
+              <div class="image">
+                <img src="../images/1.png" alt="" />
+              </div>
+              <div class="description">Designed by KHODIIJAH</div>
+            </div>
+            <div class="img-container">
+              <div class="image"><img src="../images/2.png" alt="" /></div>
+              <div class="description">Designed by HUU DAT</div>
+            </div>
+            <div class="img-container">
+              <div class="image"><img src="../images/3.png" alt="" /></div>
+              <div class="description">Designed by BISMA SIDDIQUI</div>
+            </div>
+            <div class="img-container">
+              <div class="image"><img src="../images/4.png" alt="" /></div>
+              <div class="description">Designed by JAVIER RIVERA RIZO</div>
+            </div>
+            <div class="img-container">
+              <div class="image"><img src="../images/5.png" alt="" /></div>
+              <div class="description">Designed by MADHU</div>
+            </div>
+            <div class="img-container">
+              <div class="image"><img src="../images/6.png" alt="" /></div>
+              <div class="description">Designed by FIGEN</div>
+            </div>
+            <div class="img-container">
+              <div class="image"><img src="../images/7.png" alt="" /></div>
+              <div class="description">Designed by TRAN LE PHUONG NHI</div>
+            </div>
+            <div class="img-container">
+              <div class="image"><img src="../images/8.png" alt="" /></div>
+              <div class="description">Designed by SHAY</div>
+            </div>
+          </div>
+          <div class="container">
+            <p>
+              Feeling inspired? While sipping on a coffee, waiting for a ride,
+              or during a brain break, open up Canva and join our Corn Design
+              Challenge.
+            </p>
+            <button>Design with Corn</button>
+          </div>
+        </section>
+        <footer>
+          <div class="footer-p">
+            <p>You are receiving this email because you signed up to Canva.</p>
+          </div>
+
+          <p style="margin: 30px">
+            This advertisement is made for you with love from Canva Canva Pty
+            Ltd, 110 Kippax St, NSW 2010, Australia. ABN 80 159 929 938 If you
+            need assistance, get in touch with us via our Help Center.
+            <a href="#"> Visit canva.com </a>
+            <a href="#"> Unsubscribe </a>
+            <a href="#"> Manage Email Preferences </a>
+          </p>
+
+          <div class="social-media">
+            <div class="icon"><img src="../images/fbc.png" /></div>
+            <div class="icon"><img src="../images/igc.png" /></div>
+            <div class="icon"><img src="../images/twitterc.png" /></div>
+            <div class="icon"><img src="../images/pinteret.png" /></div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
