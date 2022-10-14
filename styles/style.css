@@ -10,6 +10,11 @@ body::before {
     }
 }
 
-#portfolio a img:hover {
-  border: 10px solid rgb(255, 115, 0);
+#portfolio a {
+ text-decoration: none;
+ color: orangered;
 }
+
+#portfolio a:hover {
+    text-decoration:underline;
+   }
