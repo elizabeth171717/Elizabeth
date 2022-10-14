@@ -67,7 +67,7 @@ button a:hover {
 
 @media (max-width:500px) {
     .main-container {
-        width: 90%;
+        width: 80%;
        
     }
     .inner-container {
